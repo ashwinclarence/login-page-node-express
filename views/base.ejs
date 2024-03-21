@@ -5,6 +5,7 @@
             <form action="/route/login" method="POST" class="d-flex flex-column gap-3 w-75">
                 <input type="email" placeholder="Enter email" name="email" required class="form-control">
                 <input type="password" placeholder="Enter password" name="password" required class="form-control">
+                <p class="error-message"> <%= locals.errorMessage?"invalid username or password" :"" %> </p>
                 <button type="submit" value="submit" class="btn btn-primary">Login</button>
             </form>
             <p class="text-white">Don't have account? <a href="#">Register</a></p>

@@ -24,6 +24,9 @@ body {
     font-size: 2rem;
     font-weight: 700;
 }
+.error-message{
+    color: #ff0000;
+}
 
 .home-page-container {
     height: 100vh;
@@ -44,5 +47,11 @@ body {
     padding: 20px;
     font-size: 20px;
     color: #ffffff;
+}
+.footer-container i{
+    transition: .3s ease-in-out;
+}
+.footer-container i:hover{
+    scale: 1.5;
 }
 
