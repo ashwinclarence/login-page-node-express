@@ -1,5 +1,6 @@
 body {
     background: url('assets/bglogin.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,6 +18,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px rgb(255, 255, 255);
 }
 
 .login-box h1 {
@@ -24,7 +28,8 @@ body {
     font-size: 2rem;
     font-weight: 700;
 }
-.error-message{
+
+.error-message {
     color: #ff0000;
 }
 
@@ -48,10 +53,11 @@ body {
     font-size: 20px;
     color: #ffffff;
 }
-.footer-container i{
+
+.footer-container i {
     transition: .3s ease-in-out;
 }
-.footer-container i:hover{
+
+.footer-container i:hover {
     scale: 1.5;
 }
-
